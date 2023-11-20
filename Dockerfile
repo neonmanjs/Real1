@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get install -y systemd && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-RUN echo 'root' | chpasswd
+RUN echo '' | chpasswd
 # Expose the web-based terminal port
 EXPOSE 4200
 
